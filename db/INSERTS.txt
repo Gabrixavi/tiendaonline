@@ -1,0 +1,103 @@
+INSERT INTO Pais (nombre_Pais) VALUES ('Honduras');
+INSERT INTO Pais (nombre_Pais) VALUES ('El Salvador');
+INSERT INTO Pais (nombre_Pais) VALUES ('Guatemala');
+INSERT INTO Pais (nombre_Pais) VALUES ('Nicaragua');
+INSERT INTO Pais (nombre_Pais) VALUES ('Costa Rica');
+
+
+INSERT INTO Departamento (nombre_Departamento, id_Pais) VALUES ('Francisco Morazán', 1);
+INSERT INTO Departamento (nombre_Departamento, id_Pais) VALUES ('Cortés', 1);
+INSERT INTO Departamento (nombre_Departamento, id_Pais) VALUES ('La Libertad', 2);
+INSERT INTO Departamento (nombre_Departamento, id_Pais) VALUES ('Guatemala', 3);
+INSERT INTO Departamento (nombre_Departamento, id_Pais) VALUES ('Managua', 4);
+
+
+INSERT INTO Municipio (nombre_Municipio, id_Departamento) VALUES ('Tegucigalpa', 1);
+INSERT INTO Municipio (nombre_Municipio, id_Departamento) VALUES ('San Pedro Sula', 2);
+INSERT INTO Municipio (nombre_Municipio, id_Departamento) VALUES ('Santa Tecla', 3);
+INSERT INTO Municipio (nombre_Municipio, id_Departamento) VALUES ('Ciudad de Guatemala', 4);
+INSERT INTO Municipio (nombre_Municipio, id_Departamento) VALUES ('Managua', 5);
+
+
+INSERT INTO Tienda (nombre_Tienda, id_Municipio) VALUES ('Supermercado La Colonia Tegucigalpa', 1);
+INSERT INTO Tienda (nombre_Tienda, id_Municipio) VALUES ('Supermercado La Colonia San Pedro Sula', 2);
+INSERT INTO Tienda (nombre_Tienda, id_Municipio) VALUES ('Supermercado La Colonia Santa Tecla', 3);
+INSERT INTO Tienda (nombre_Tienda, id_Municipio) VALUES ('Supermercado La Colonia Guatemala', 4);
+INSERT INTO Tienda (nombre_Tienda, id_Municipio) VALUES ('Supermercado La Colonia Managua', 5);
+
+
+INSERT INTO Tipo (nombre_Tipo, descripcion) VALUES ('Lácteos', 'Productos derivados de la leche');
+INSERT INTO Tipo (nombre_Tipo, descripcion) VALUES ('Bebidas', 'Bebidas carbonatadas y no carbonatadas');
+INSERT INTO Tipo (nombre_Tipo, descripcion) VALUES ('Abarrotes', 'Productos de consumo diario');
+INSERT INTO Tipo (nombre_Tipo, descripcion) VALUES ('Limpieza', 'Productos de limpieza para el hogar');
+INSERT INTO Tipo (nombre_Tipo, descripcion) VALUES ('Cuidado personal', 'Productos de higiene personal');
+
+
+INSERT INTO Producto (UPC, nombre, tamaño, embalaje, marca, id_Tipo, precio) VALUES (1001, 'Leche Entera', '1L', 'Botella', 'Sula', 1, 25.00);
+INSERT INTO Producto (UPC, nombre, tamaño, embalaje, marca, id_Tipo, precio) VALUES (1002, 'Pepsi', '2L', 'Botella', 'PepsiCo', 2, 35.00);
+INSERT INTO Producto (UPC, nombre, tamaño, embalaje, marca, id_Tipo, precio) VALUES (1003, 'Coca Cola', '2L', 'Botella', 'Coca Cola', 2, 35.00);
+INSERT INTO Producto (UPC, nombre, tamaño, embalaje, marca, id_Tipo, precio) VALUES (1004, 'Jabón Líquido', '500ml', 'Botella', 'Protex', 5, 60.00);
+INSERT INTO Producto (UPC, nombre, tamaño, embalaje, marca, id_Tipo, precio) VALUES (1005, 'Arroz', '1kg', 'Bolsa', 'CampoFresco', 3, 30.00);
+
+
+
+INSERT INTO Cliente (nombre1, nombre2, apellido1, apellido2, email) VALUES ('Carlos', 'Andrés', 'Martínez', 'Hernández', 'carlos.martinez@gmail.com');
+INSERT INTO Cliente (nombre1, nombre2, apellido1, apellido2, email) VALUES ('María', 'Isabel', 'Gómez', 'López', 'maria.gomez@gmail.com');
+INSERT INTO Cliente (nombre1, nombre2, apellido1, apellido2, email) VALUES ('Juan', 'Carlos', 'Pérez', 'Ramírez', 'juan.perez@gmail.com');
+INSERT INTO Cliente (nombre1, nombre2, apellido1, apellido2, email) VALUES ('Ana', 'Lucía', 'Fernández', 'Rodríguez', 'ana.fernandez@gmail.com');
+INSERT INTO Cliente (nombre1, nombre2, apellido1, apellido2, email) VALUES ('José', 'Manuel', 'García', 'Díaz', 'jose.garcia@gmail.com');
+
+
+INSERT INTO Proveedor (nombre, id_Producto) VALUES ('Distribuidora La Colonia', 1001);
+INSERT INTO Proveedor (nombre, id_Producto) VALUES ('Distribuidora La Colonia', 1002);
+INSERT INTO Proveedor (nombre, id_Producto) VALUES ('Distribuidora La Colonia', 1003);
+INSERT INTO Proveedor (nombre, id_Producto) VALUES ('Distribuidora La Colonia', 1004);
+INSERT INTO Proveedor (nombre, id_Producto) VALUES ('Distribuidora La Colonia', 1005);
+
+
+INSERT INTO Producto_Tienda (UPC_Producto, id_Tienda, cantidad) VALUES (1001, 1, 50);
+INSERT INTO Producto_Tienda (UPC_Producto, id_Tienda, cantidad) VALUES (1002, 2, 60);
+INSERT INTO Producto_Tienda (UPC_Producto, id_Tienda, cantidad) VALUES (1003, 3, 70);
+INSERT INTO Producto_Tienda (UPC_Producto, id_Tienda, cantidad) VALUES (1004, 4, 40);
+INSERT INTO Producto_Tienda (UPC_Producto, id_Tienda, cantidad) VALUES (1005, 5, 30);
+
+
+INSERT INTO Compra (fecha, id_Cliente, id_Tienda) VALUES ('2024-08-21', 1, 1);
+INSERT INTO Compra (fecha, id_Cliente, id_Tienda) VALUES ('2024-08-22', 2, 2);
+INSERT INTO Compra (fecha, id_Cliente, id_Tienda) VALUES ('2024-08-23', 3, 3);
+INSERT INTO Compra (fecha, id_Cliente, id_Tienda) VALUES ('2024-08-24', 4, 4);
+INSERT INTO Compra (fecha, id_Cliente, id_Tienda) VALUES ('2024-08-25', 5, 5);
+INSERT INTO Compra (fecha, id_Cliente, id_Tienda) VALUES ('2024-08-26', 1, 2);
+INSERT INTO Compra (fecha, id_Cliente, id_Tienda) VALUES ('2024-08-27', 2, 3);
+INSERT INTO Compra (fecha, id_Cliente, id_Tienda) VALUES ('2024-08-28', 3, 4);
+INSERT INTO Compra (fecha, id_Cliente, id_Tienda) VALUES ('2024-08-29', 4, 5);
+INSERT INTO Compra (fecha, id_Cliente, id_Tienda) VALUES ('2024-08-30', 5, 1);
+
+
+
+INSERT INTO Factura (fecha, subtotal, ISV, id_Compra, id_Tienda, id_Cliente) VALUES ('2024-08-21', 200.00, 30.00, 1, 1, 1);
+INSERT INTO Factura (fecha, subtotal, ISV, id_Compra, id_Tienda, id_Cliente) VALUES ('2024-08-22', 300.00, 45.00, 2, 2, 2);
+INSERT INTO Factura (fecha, subtotal, ISV, id_Compra, id_Tienda, id_Cliente) VALUES ('2024-08-23', 400.00, 60.00, 3, 3, 3);
+INSERT INTO Factura (fecha, subtotal, ISV, id_Compra, id_Tienda, id_Cliente) VALUES ('2024-08-24', 500.00, 75.00, 4, 4, 4);
+INSERT INTO Factura (fecha, subtotal, ISV, id_Compra, id_Tienda, id_Cliente) VALUES ('2024-08-25', 600.00, 90.00, 5, 5, 5);
+INSERT INTO Factura (fecha, subtotal, ISV, id_Compra, id_Tienda, id_Cliente) VALUES ('2024-08-26', 250.00, 37.50, 6, 2, 1);
+INSERT INTO Factura (fecha, subtotal, ISV, id_Compra, id_Tienda, id_Cliente) VALUES ('2024-08-27', 350.00, 52.50, 7, 3, 2);
+INSERT INTO Factura (fecha, subtotal, ISV, id_Compra, id_Tienda, id_Cliente) VALUES ('2024-08-28', 450.00, 67.50, 8, 4, 3);
+INSERT INTO Factura (fecha, subtotal, ISV, id_Compra, id_Tienda, id_Cliente) VALUES ('2024-08-29', 550.00, 82.50, 9, 5, 4);
+INSERT INTO Factura (fecha, subtotal, ISV, id_Compra, id_Tienda, id_Cliente) VALUES ('2024-08-30', 650.00, 97.50, 10, 1, 5);
+
+
+
+INSERT INTO Detalle_Factura (cantidad, precio, id_Factura, UPC_Producto) VALUES (2, 25.00, 1, 1001);
+INSERT INTO Detalle_Factura (cantidad, precio, id_Factura, UPC_Producto) VALUES (1, 35.00, 2, 1002);
+INSERT INTO Detalle_Factura (cantidad, precio, id_Factura, UPC_Producto) VALUES (2, 35.00, 3, 1003);
+INSERT INTO Detalle_Factura (cantidad, precio, id_Factura, UPC_Producto) VALUES (3, 60.00, 4, 1004);
+INSERT INTO Detalle_Factura (cantidad, precio, id_Factura, UPC_Producto) VALUES (4, 30.00, 5, 1005);
+INSERT INTO Detalle_Factura (cantidad, precio, id_Factura, UPC_Producto) VALUES (2, 25.00, 6, 1001);
+INSERT INTO Detalle_Factura (cantidad, precio, id_Factura, UPC_Producto) VALUES (1, 35.00, 7, 1002);
+INSERT INTO Detalle_Factura (cantidad, precio, id_Factura, UPC_Producto) VALUES (2, 35.00, 8, 1003);
+INSERT INTO Detalle_Factura (cantidad, precio, id_Factura, UPC_Producto) VALUES (3, 60.00, 9, 1004);
+INSERT INTO Detalle_Factura (cantidad, precio, id_Factura, UPC_Producto) VALUES (4, 30.00, 10, 1005);
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Gestión de Productos</h1>
+        
+        <div class="card shadow p-4">
+            <form id="productoForm">
+                <div class="form-group">
+                    <label for="UPC">UPC:</label>
+                    <input type="text" class="form-control" id="UPC" name="UPC" placeholder="Ingrese el UPC del producto">
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese el nombre del producto">
+                </div>
+
+                <div class="form-group">
+                    <label for="tamaño">Tamaño:</label>
+                    <input type="text" class="form-control" id="tamaño" name="tamaño" placeholder="Ingrese el tamaño del producto">
+                </div>
+
+                <div class="form-group">
+                    <label for="embalaje">Embalaje:</label>
+                    <input type="text" class="form-control" id="embalaje" name="embalaje" placeholder="Ingrese el embalaje del producto">
+                </div>
+
+                <div class="form-group">
+                    <label for="marca">Marca:</label>
+                    <input type="text" class="form-control" id="marca" name="marca" placeholder="Ingrese la marca del producto">
+                </div>
+
+                <div class="form-group">
+                    <label for="id_Tipo">ID Tipo:</label>
+                    <input type="text" class="form-control" id="id_Tipo" name="id_Tipo" placeholder="Ingrese el ID del tipo de producto">
+                </div>
+
+                <div class="text-center">
+                    <button type="button" class="btn btn-success mr-2" id="btnAgregarProducto">Agregar</button>
+                    <button type="button" class="btn btn-primary mr-2" id="btnModificarProducto">Modificar</button>
+                    <button type="button" class="btn btn-danger" id="btnEliminarProducto">Eliminar</button>
+                </div>
+            </form>
+        </div>
+
+        <h2 class="text-center mt-5">Lista de Productos</h2>
+        <ul id="productosList" class="list-group">
+            <!-- Aquí se cargarán los productos -->
+        </ul>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

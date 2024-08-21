@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes de Tienda Online</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script> <!-- Asegúrate de que el archivo JS esté bien enlazado -->
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4" style="color: #ff7f50;">Reportes de Tienda Online</h1>
+        
+        <div class="form-group">
+            <label for="reporte">Seleccione un Reporte:</label>
+            <select class="form-control" id="reporte" name="reporte">
+                <option value="inventario">Inventario de Productos</option>
+                <option value="comprasCliente">Compras por Cliente</option>
+                <option value="historialVentas">Historial de Ventas por Tienda</option>
+                <option value="productosMasVendidosTienda">Productos más Vendidos en Cada Tienda</option>
+                <option value="productosMasVendidosPais">Productos más Vendidos en Cada País</option>
+                <option value="tiendasMasVentas">Tiendas con Más Ventas en lo que va de Año</option>
+                <option value="cocaColaVsPepsi">Tiendas donde se Vende más Coca-Cola que Pepsi</option>
+                <option value="productosSinLeche">Tipos de Productos más Comprados sin Contar la Leche</option>
+            </select>
+        </div>
+
+        <button class="btn btn-primary mb-3" type="button" id="btnCargarReporte">Cargar Reporte</button>
+
+        <div id="seleccionCliente" class="form-group" style="display: none;">
+            <label for="idCliente">Seleccione un Cliente:</label>
+            <select class="form-control" id="idCliente"></select>
+            <button class="btn btn-info mt-2" type="button" id="btnVerCompras">Ver Compras</button>
+        </div>
+
+        <h2>Resultado del Reporte</h2>
+        <div id="resultadoReporte" class="mt-4">
+            <!-- Aquí se mostrarán las compras y sus detalles -->
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

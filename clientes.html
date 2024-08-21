@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4" style="color: #ff7f50;">Gestión de Clientes</h1>
+
+        <div class="card shadow p-4">
+            <form id="clienteForm">
+                <div class="form-group">
+                    <label for="id_Cliente">ID Cliente:</label>
+                    <input type="text" class="form-control" id="id_Cliente" name="id_Cliente" placeholder="Ingrese el ID del Cliente">
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre1">Primer Nombre:</label>
+                    <input type="text" class="form-control" id="nombre1" name="nombre1" placeholder="Ingrese el primer nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre2">Segundo Nombre:</label>
+                    <input type="text" class="form-control" id="nombre2" name="nombre2" placeholder="Ingrese el segundo nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido1">Primer Apellido:</label>
+                    <input type="text" class="form-control" id="apellido1" name="apellido1" placeholder="Ingrese el primer apellido">
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido2">Segundo Apellido:</label>
+                    <input type="text" class="form-control" id="apellido2" name="apellido2" placeholder="Ingrese el segundo apellido">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese el correo electrónico">
+                </div>
+
+                <div class="text-center">
+                    <button type="button" class="btn btn-success mr-2" id="btnAgregarCliente">Agregar</button>
+                    <button type="button" class="btn btn-primary mr-2" id="btnModificarCliente">Modificar</button>
+                    <button type="button" class="btn btn-danger" id="btnEliminarCliente">Eliminar</button>
+                </div>
+            </form>
+        </div>
+
+        <h2 class="text-center mt-5" style="color: #ff7f50;">Lista de Clientes</h2>
+        <ul id="clientesList" class="list-group">
+            <!-- Aquí se cargarán los clientes -->
+        </ul>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

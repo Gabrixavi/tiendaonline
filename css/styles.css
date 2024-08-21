@@ -1,0 +1,102 @@
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.card {
+    border: none;
+    background-color: #fff3e6;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn-orange {
+    background-color: #ff7043;
+    color: #ffffff;
+}
+
+.btn-orange:hover {
+    background-color: #ff5722;
+}
+
+
+/* Fondo general de la página */
+body {
+    background-color: #f4f4f4;
+}
+
+/* Título de la página */
+h1, h2 {
+    font-weight: bold;
+    color: #ff7f50;
+}
+
+/* Estilo para la lista de clientes */
+#clientesList {
+    margin-top: 20px;
+}
+
+/* Estilo para cada elemento de la lista */
+#clientesList .list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ff7f50;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efecto hover para la lista */
+#clientesList .list-group-item:hover {
+    background-color: #ff7f50;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilo de los botones dentro de la lista, si los hubiera */
+#clientesList .btn {
+    margin-left: 10px;
+}
+
+/* Estilo para las etiquetas y entradas del formulario */
+label {
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    border-radius: 5px;
+}
+
+/* Estilo para los botones del formulario */
+.btn {
+    border-radius: 5px;
+}
+
+
+/* Estilo para la lista de productos */
+#productosList {
+    margin-top: 20px;
+}
+
+/* Estilo para cada elemento de la lista de productos */
+#productosList .list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ff7f50;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efecto hover para la lista de productos */
+#productosList .list-group-item:hover {
+    background-color: #ff7f50;
+    color: white;
+    cursor: pointer;
+}
